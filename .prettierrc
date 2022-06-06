@@ -1,6 +1,7 @@
 {
   "packageManager": "yarn",
   "printWidth": 120,
+  "tabWidth": 2,
   "bracketSpacing": true,
   "bracketSameLine": true,
   "singleQuote": true,

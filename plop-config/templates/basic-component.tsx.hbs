@@ -1,0 +1,20 @@
+import { useState } from 'react';
+import { {{ name }}Styled } from './styles';
+
+type {{ name }}Props = {
+	anyProps?: string;
+};
+
+export function {{ name }}({ anyProps }: {{ name }}Props) {
+	const [description, setDescription] = useState('');
+
+  // PLOP AUTO GENERATE. DO NOT REMOVE
+
+	return (
+		<{{ name }}Styled>
+			<h1>{{dashCase name}}</h1>
+			<h1>{{camelCase name}}</h1>
+			<h1>{{snakeCase name}}</h1>
+		</{{ name }}Styled>
+	)
+}
