@@ -9,7 +9,7 @@ module.exports = {
 			if (generatorName) {
 				paths = generatorName.actions
 					.filter((action) => !!action.path && action.type !== 'format-files')
-					.map((action) => plop.renderString(action.path, answers));
+					.map((action) => plop.renderString(action.path.replace('./../', ''), answers));
 			}
 		}
 
@@ -17,6 +17,6 @@ module.exports = {
 			await sh(`yarn prettier --write ${paths.join(' ')}`);
 		}
 
-		return 'Files formatting completed';
+		return 'Files formatting completed!';
 	}
 };
