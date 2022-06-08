@@ -3,8 +3,8 @@ module.exports = {
 		{
 			type: 'input',
 			name: 'name',
-			message: 'What is the component name?'
-		}
+			message: 'What is the component name?',
+		},
 		// {
 		//   type: 'list',
 		//   name: 'category',
@@ -14,5 +14,5 @@ module.exports = {
 		//     return val.toLowerCase();
 		//   }
 		// }
-	]
+	],
 };

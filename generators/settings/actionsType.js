@@ -8,8 +8,8 @@ module.exports = {
 
 			if (generatorName) {
 				paths = generatorName.actions
-					.filter((action) => !!action.path && action.type !== 'format-files')
-					.map((action) => plop.renderString(action.path.replace('./../', ''), answers));
+					.filter(action => !!action.path && action.type !== 'format-files')
+					.map(action => plop.renderString(action.path.replace('./../', ''), answers));
 			}
 		}
 
@@ -18,5 +18,5 @@ module.exports = {
 		}
 
 		return 'Files formatting completed!';
-	}
+	},
 };

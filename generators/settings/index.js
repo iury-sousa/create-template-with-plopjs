@@ -9,5 +9,5 @@ module.exports = {
 	actionsType,
 	helpers,
 	prompt,
-	utils
+	utils,
 };
